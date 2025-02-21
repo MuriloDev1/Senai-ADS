@@ -1,0 +1,22 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+header {
+  position: relative;
+  width: 100%;
+  height: 30svh;
+  background: url(./assets/background.jpg) center;
+}
+
+main {
+  height: 70svh;
+  box-sizing: border-box;
+  background-color: aliceblue;
+}
+
+.container {
+  padding: 10px;
+  background-color: white;
+}

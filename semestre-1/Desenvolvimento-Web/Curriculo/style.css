@@ -14,11 +14,15 @@ body {
 .container {
   display: flex;
   margin: 20px auto;
-  width: 100%;
-  max-width: 1000px;
-  height: 95vh;
+  width: 90%;
+  max-width: 1200px;
+  height: auto;
   background-color: rgba(0, 0, 0, 0.549);
   box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+.container {
+  min-height: 100vh;
 }
 
 /* ASIDE */
@@ -54,9 +58,9 @@ aside {
   margin-bottom: 5px;
 }
 
-.perfil h3,
+.perfil h2,
 .perfil h5 {
-  margin: 5px 0; /* Reduzindo a margem superior e inferior */
+  margin: 5px 0;
 }
 
 .perfil h5 {
@@ -102,7 +106,8 @@ aside {
   color: black;
   font-weight: bold;
   padding-right: 5px;
-  /* animation: fillAnimation 3s; */
+  width: 0;
+  animation: fillAnimation 2s forwards;
 }
 
 @keyframes fillAnimation {
@@ -110,21 +115,21 @@ aside {
     width: 0;
   }
   100% {
-    width: 80%;
+    width: var(--width);
   }
 }
 
 /* Languages */
 .skill-circle {
   display: flex;
-  flex-direction: row; /* Coloca os elementos na horizontal */
-  gap: 20px; /* Espaçamento entre os itens */
+  flex-direction: row; 
+  gap: 20px; 
 }
 
 .skill-item {
   display: flex;
-  flex-direction: column; /* Faz o conteúdo (círculo + texto) empilhar verticalmente */
-  align-items: center; /* Centraliza os itens */
+  flex-direction: column; 
+  align-items: center; 
   justify-content: center;
 }
 
@@ -151,16 +156,16 @@ aside {
 
 /* MAIN */
 main {
+  box-sizing: border-box;
   width: 65%;
-  background-color: rgba(34, 32, 32, 0.884);
+  background-color: rgba(34, 32, 32, 0.455);
   color: var(--text);
   padding: 20px;
+  z-index: 2;
 }
 
-.formation_container {
-  display: flex;
-  gap: 0px;
-  flex-wrap: wrap;
+main p {
+  font-weight: 100;
 }
 
 .formation_text {
@@ -170,9 +175,15 @@ main {
 }
 
 .formation_text span,
-.formation_text p,
+.formation_text p, 
 .formation_text h4 {
   margin: 20px 0;
+}
+
+.formation_text h4 {
+  color: #ddddddb0;
+  position: relative;
+  top: -15px;
 }
 
 .formation_text span {
@@ -187,9 +198,9 @@ main {
   font-weight: 100;
 }
 
-.certification_text h3,
+.certification_text h2,
 p {
-  margin: 25px 0;
+  margin-bottom: 10px;
 }
 
 @media (max-width: 768px) {
@@ -197,16 +208,15 @@ p {
     flex-direction: column;
     height: auto;
   }
-
-  aside,
+  aside {
+    width: 100%;
+  }
   main {
     width: 100%;
   }
-
   aside {
     text-align: center;
   }
-
   .skill-container {
     place-items: center;
   }

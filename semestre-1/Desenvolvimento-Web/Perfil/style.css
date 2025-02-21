@@ -1,0 +1,73 @@
+:root {
+  --emphasis: yellowgreen;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  background-color: black;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.container {
+  width: 350px;
+  height: auto;
+  margin: 50px auto;
+  padding: 10px;
+  background-color: rgb(27, 26, 26);
+  color: #fff;
+  border-radius: 10px;
+  text-align: center;
+}
+
+.container img {
+  margin-top: 20px;
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+}
+
+.container h1 {
+  margin: 10px;
+  font-size: 1.4rem;
+}
+.container h2 {
+  margin-bottom: 15px;
+}
+.description {
+  position: relative;
+  font-size: 0.8rem;
+  color: var(--emphasis);
+}
+
+.description img {
+  position: absolute;
+  top: -45px;
+  width: 70px;
+  height: 60px;
+  margin-left: px;
+}
+
+.text {
+  font-size: 0.7rem;
+}
+
+button {
+  background-color: rgb(62, 62, 62);
+  display: flex;
+  margin: 10px auto;
+  width: 80%;
+  padding: 10px;
+  border-radius: 5px;
+  border: none;
+}
+
+button a {
+  width: 100%;
+  text-decoration: none;
+  color: #fff;
+  font-weight: bolder;
+}

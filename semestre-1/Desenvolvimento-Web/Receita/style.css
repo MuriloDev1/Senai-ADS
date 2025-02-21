@@ -1,0 +1,114 @@
+:root {
+  --bold: black;
+  --title: rgb(179, 16, 16);
+}
+
+* {
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  font-family: monospace;
+  background-color: antiquewhite;
+}
+
+h3 {
+  font-size: 15px;
+  font-weight: bold;
+  color: var(--title);
+}
+
+h2 {
+  font-weight: bolder;
+  color: var(--title);
+}
+
+span {
+  color: var(--bold);
+  font-weight: bolder;
+}
+
+/* Container */
+.container {
+  background-color: white;
+  margin: 20px auto;
+  width: 400px;
+  padding: 20px;
+  border-radius: 10px;
+}
+
+.container img {
+  width: 100%;
+  height: 160px;
+  border-radius: 10px;
+}
+
+/* Title */
+.title {
+  margin: 15px 0;
+}
+
+.title p {
+  margin-top: 10px;
+  font-size: 12px;
+}
+
+/* Preparation time */
+.preparation-time {
+  background-color: rgba(237, 188, 234, 0.138);
+  padding: 10px 10px;
+  border-radius: 10px;
+}
+
+.preparation-time ul {
+  padding: 5px 30px;
+}
+
+/* Ingredientes */
+.ingredients {
+  padding-top: 10px;
+}
+
+.ingredients ul {
+  padding: 15px 20px;
+  line-height: 17px;
+}
+
+/* Instructions */
+
+.instructions {
+  padding-top: 10px;
+}
+
+.instructions ol {
+  padding: 10px 30px;
+  line-height: 15px;
+}
+.instructions li {
+  margin-top: 10px;
+}
+
+/* Nutrition */
+.nutrition {
+  padding: 10px;
+}
+
+.nutrition p {
+  margin-top: 10px;
+  font-size: 12px;
+}
+
+table {
+    margin-top: 5px;
+    font-size: 12px;
+    width: 100%;
+    border-collapse: collapse;
+}
+
+td, th {
+    border-bottom: 1px solid rgb(113, 113, 113);
+    padding: 8px;
+    text-align: left;
+}
+
