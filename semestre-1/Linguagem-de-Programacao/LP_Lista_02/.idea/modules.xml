@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/.idea/LP_Lista_02.iml" filepath="$PROJECT_DIR$/.idea/LP_Lista_02.iml" />
+      <module fileurl="file://$PROJECT_DIR$/exercicio-01/exercicio-01.iml" filepath="$PROJECT_DIR$/exercicio-01/exercicio-01.iml" />
+      <module fileurl="file://$PROJECT_DIR$/exercicio-02/exercicio-02.iml" filepath="$PROJECT_DIR$/exercicio-02/exercicio-02.iml" />
+      <module fileurl="file://$PROJECT_DIR$/exercicio-03/exercicio-03.iml" filepath="$PROJECT_DIR$/exercicio-03/exercicio-03.iml" />
+      <module fileurl="file://$PROJECT_DIR$/exercicio-04/exercicio-04.iml" filepath="$PROJECT_DIR$/exercicio-04/exercicio-04.iml" />
+      <module fileurl="file://$PROJECT_DIR$/exercicio-05/exercicio-05.iml" filepath="$PROJECT_DIR$/exercicio-05/exercicio-05.iml" />
+      <module fileurl="file://$PROJECT_DIR$/exercicio-06/exercicio-06.iml" filepath="$PROJECT_DIR$/exercicio-06/exercicio-06.iml" />
+      <module fileurl="file://$PROJECT_DIR$/exercicio-07/exercicio-07.iml" filepath="$PROJECT_DIR$/exercicio-07/exercicio-07.iml" />
+      <module fileurl="file://$PROJECT_DIR$/exercicio-08/exercicio-08.iml" filepath="$PROJECT_DIR$/exercicio-08/exercicio-08.iml" />
+      <module fileurl="file://$PROJECT_DIR$/exercicio-09/exercicio-09.iml" filepath="$PROJECT_DIR$/exercicio-09/exercicio-09.iml" />
+      <module fileurl="file://$PROJECT_DIR$/exercicio-10/exercicio-10.iml" filepath="$PROJECT_DIR$/exercicio-10/exercicio-10.iml" />
+      <module fileurl="file://$PROJECT_DIR$/exercicio-12/exercicio-12.iml" filepath="$PROJECT_DIR$/exercicio-12/exercicio-12.iml" />
+      <module fileurl="file://$PROJECT_DIR$/exercicios-11/exercicios-11.iml" filepath="$PROJECT_DIR$/exercicios-11/exercicios-11.iml" />
+    </modules>
+  </component>
+</project>
