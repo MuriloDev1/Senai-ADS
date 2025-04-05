@@ -16,7 +16,7 @@ public class Main {
             System.out.println("Nota: A");
         else if (media >= 7)
             System.out.println("Nota: B");
-        else if (media >= 5 & media < 7)
+        else if (media >= 5)
             System.out.println("Nota: C");
         else
             System.out.println("Nota: D");
