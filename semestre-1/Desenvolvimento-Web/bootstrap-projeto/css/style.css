@@ -1,0 +1,20 @@
+.custom-carousel {
+    max-height: 1200px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+
+  .carousel-img {
+    height: 500px;
+  }
+
+  @media (max-width: 768px) {
+    .carousel-img {
+      height: 200px;
+    }
+  }
+
+  @media (max-width: 480px) {
+    .carousel-img {
+      height: 150px;
+    }
+  }
