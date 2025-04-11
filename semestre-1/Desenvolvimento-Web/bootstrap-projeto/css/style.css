@@ -18,3 +18,9 @@
       height: 150px;
     }
   }
+
+.container-dm d-flex justify-content-center {
+  @media (max-width: 768px) {
+    flex-direction: row;
+  }
+}

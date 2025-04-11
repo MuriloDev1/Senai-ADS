@@ -168,26 +168,92 @@
       </div>
       <!-- Fim Carousel -->
       <br />
-      <div class="container d-flex justify-content-center">
-        <div class="card" style="width: 18rem;">
-            <img src="/img/techmob.jpeg" class="card-img-top" alt="..." style="height: 200px;">
-            <div class="card-body">
-              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-            </div>
-          </div>
-          <div class="card" style="width: 18rem;">
-            <img src="/img/toyota-carousel.jpeg" class="card-img-top" alt="..." style="height: 200px;">
-            <div class="card-body">
-              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-            </div>
-          </div>
-          <div class="card" style="width: 18rem;">
-            <img src="/img/senai.jpeg" class="card-img-top" alt="..." style="height: 200px;">
-            <div class="card-body">
-              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-            </div>
-          </div>
-      </div>
+      <!-- Cards -->
+    <!-- Cards -->
+<div class="container-dm d-flex flex-column flex-md-row justify-content-center align-items-center">
+  <div class="card m-2 shadow" style="width: 18rem">
+    <img
+      src="/img/techmob.jpeg"
+      class="card-img-top"
+      alt="..."
+      style="height: 200px"
+    />
+    <div class="card-body">
+      <p class="card-text">
+        Some quick example text to build on the card title and make up the
+        bulk of the card's content.
+      </p>
+    </div>
+  </div>
+  <div class="card m-2 shadow" style="width: 18rem">
+    <img
+      src="/img/toyota-carousel.jpeg"
+      class="card-img-top"
+      alt="..."
+      style="height: 200px"
+    />
+    <div class="card-body">
+      <p class="card-text">
+        Some quick example text to build on the card title and make up the
+        bulk of the card's content.
+      </p>
+    </div>
+  </div>
+  <div class="card shadow m-2" style="width: 18rem">
+    <img
+      src="/img/senai.jpeg"
+      class="card-img-top"
+      alt="..."
+      style="height: 200px"
+    />
+    <div class="card-body">
+      <p class="card-text">
+        Some quick example text to build on the card title and make up the
+        bulk of the card's content.
+      </p>
+    </div>
+  </div>
+</div>
+
+
+    <!-- Formulário de Contato -->
+    <div class="container my-5">
+      <h2 class="text-center mb-4">Fale Conosco</h2>
+      <form>
+        <div class="mb-3">
+          <label for="nome" class="form-label">Nome</label>
+          <input
+            type="text"
+            class="form-control"
+            id="nome"
+            placeholder="Seu nome"
+          />
+        </div>
+        <div class="mb-3">
+          <label for="email" class="form-label">E-mail</label>
+          <input
+            type="email"
+            class="form-control"
+            id="email"
+            placeholder="seu@email.com"
+          />
+        </div>
+        <div class="mb-3">
+          <label for="mensagem" class="form-label">Mensagem</label>
+          <textarea
+            class="form-control"
+            id="mensagem"
+            rows="4"
+            placeholder="Digite sua mensagem"
+          ></textarea>
+        </div>
+        <button type="submit" class="btn btn-danger">Enviar</button>
+      </form>
+    </div>
+
+    <!-- Rodapé -->
+    <div class="container-dm p-2 text-center bg-black text-white ">
+      © todos os direitos reservados
     </div>
 
     <script
