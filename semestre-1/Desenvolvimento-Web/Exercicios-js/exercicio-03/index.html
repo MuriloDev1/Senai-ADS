@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Numero de 1 ate 100</title>
+  </head>
+  <body>
+    <label>Digite um numero para contar ate 100</label>
+    <input type="number" id="num" />
+    <button id="enviar">Enviar</button>
+    <p id="resultado"></p>
+
+    <script>
+      const resultado = document.getElementById("resultado");
+
+      document.getElementById("enviar").addEventListener("click", () => {
+        let num = Number(document.getElementById("num").value);
+        let output = ""
+
+        for (let i = num; i <=100; i++) {
+          output += i + `<br>`
+        }
+        resultado.innerHTML = output
+      });
+    </script>
+  </body>
+</html>

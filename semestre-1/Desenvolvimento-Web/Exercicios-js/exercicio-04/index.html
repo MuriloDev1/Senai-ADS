@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exer4 - Somar números</title>
+    <style>
+    body {
+      font-family: Arial, sans-serif;
+      text-align: center;
+      margin-top: 50px;
+    }
+    input, button {
+      padding: 10px;
+      font-size: 16px;
+      width: 400px;
+    }
+    button {
+        margin-top: 20px;
+    }
+    #resultado {
+      margin-top: 20px;
+      font-size: 20px;
+      font-weight: bold;
+    }
+  </style>
+</head>
+<body>
+  <h1>Somar números até digitar zero.</h1>
+  <input type="number" id="num" placeholder="Digite um número ou zero para finalizar" />
+  <br>
+  <button onclick="somar()">Somar</button>
+  <br>
+  <div id="resultado">0</div>
+ 
+  <script>
+        function somar()
+        {
+            let num = document.getElementById("num").value;
+            let div = document.getElementById("resultado");
+            div.textContent = num;
+        }
+  </script>
+
+</body>
+</html>
