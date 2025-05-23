@@ -1,11 +1,50 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title></title>
-</head>
-<body>
-    
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Maior número da lista</title>
+
+    <style>
+      body {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+      }
+      ul {
+        display: flex;
+        gap: 2rem;
+      }
+    </style>
+  </head>
+  <body>
+    <input type="number" id="number" />
+    <button id="add">Adicionar</button>
+
+    <label style="display: flex">Lista de números</label>
+    <ul id="list"></ul>
+    <p id="resultado"></p>
+
+    <script>
+      const numbersArr = [];
+
+      document.getElementById("add").addEventListener("click", () => {
+        const inputValue = parseFloat(document.getElementById("number").value);
+
+        if (!isNaN(inputValue)) {
+          numbersArr.push(inputValue);
+          document.getElementById("list").innerHTML += `<li>${inputValue}</li>`;
+          inputValue.value = " ";
+        }
+
+        numbersArr.sort((a, b) => a - b);
+        const maiorValor = numbersArr[numbersArr.length - 1];
+
+        document.getElementById(
+          "resultado"
+        ).innerHTML = `Maior valor: ${maiorValor}`;
+      });
+    </script>
+  </body>
 </html>

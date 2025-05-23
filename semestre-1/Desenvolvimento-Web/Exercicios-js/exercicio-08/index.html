@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Fibonacci</title>
+    <style>
+      body {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+      }
+    </style>
+  </head>
+  <body>
+    <h2>Fibonacci</h2>
+
+    <label
+      >Selecione quantos termos irão gerar da sequência de Fibonacci:
+    </label>
+    <input type="number" id="inputValue" placeholder="Pressione enter" />
+    <button id="gerar">Gerar</button>
+    <p id="resultado"></p>
+
+    <script>
+      document.getElementById("gerar").addEventListener("click", () => {
+        const termos = parseInt(document.getElementById("inputValue").value);
+
+        let a = 0,
+          b = 1;
+        let resultado = "";
+
+        for (i = 0; i <= termos; i++) {
+          resultado += a + ", ";
+          let proximoValor = a + b;
+          a = b;
+          b = proximoValor;
+        }
+        document.getElementById("resultado").innerHTML = resultado;
+      });
+    </script>
+  </body>
+</html>
