@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Bootstrap -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <!-- Jquery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <!-- Script -->
+    <script src="script.js" defer></script>
+    <title>Produtos</title>
+  </head>
+  <body>
+    <!-- NavBar -->
+    <nav class="navbar bg-primary" data-bs-theme="dark">
+      <div class="container-fluid">
+        <a class="navbar-brand">
+          Catálogo de Produtos (<span id="total-produtos">0</span>)</a
+        >
+        <form class="d-flex" role="search">
+          <input
+            class="form-control me-2"
+            type="search"
+            placeholder="Search"
+            aria-label="Search"
+          />
+          <button
+            class="btn btn-outline-success text-white border-white"
+            type="submit"
+          >
+            Search
+          </button>
+        </form>
+      </div>
+    </nav>
+
+    <!-- Produtos -->
+    <div class="container">
+      <div id="catalogo" class="row">
+        <!-- Cards dos produtos aparecerão aqui -->
+      </div>
+    </div>
+  </body>
+</html>
