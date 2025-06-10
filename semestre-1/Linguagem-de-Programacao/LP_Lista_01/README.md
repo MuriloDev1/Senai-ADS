@@ -168,7 +168,7 @@ Para mais informações acesse [Aula 01: Fluxogramas.](https://www.notion.so/cai
 10. Elabore um fluxograma para verificar se um número digitado pelo usuário é primo.
    
    ```mermaid
-  flowchart TD
+flowchart TD
     start((Start)) 
     --> input[\ Digite o número \]
     input --> verification{num <= 1?}
@@ -188,6 +188,4 @@ Para mais informações acesse [Aula 01: Fluxogramas.](https://www.notion.so/cai
     A --> finish([Finish])
     B --> finish
     E --> finish
-
-      
-   ```
+```
