@@ -1,20 +1,28 @@
 import java.util.Scanner;
 
 public class Main {
-    public static int notaPesos (int n1, int n2) {
-        return (n1 + (n2 * 2)) / 3;
-    }
-
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
+        double n1, n2;
+        double peso1 = 1;
+        double peso2 = 2;
 
-        System.out.println("Digite sua primeira nota: ");
-        int n1 = scanner.nextInt();
-        System.out.println("Digite sua segunda nota: ");
-        int n2 = scanner.nextInt();
+        System.out.println("Média de notas com Pesos Diferentes");
+        System.out.println("-----");
 
-        double media = notaPesos(n1, n2);
+        System.out.println("Digite sua primeira nota e segunda nota (separadas por espaço): ");
+        n1 = scanner.nextDouble();
+        n2 = scanner.nextDouble();
 
-        System.out.println("A média das notas (Nota 1 - peso 1 e Nota 2 - peso 2 é: "+ media);
+        double somaNotas = (n1 * peso1) + (n2 * peso2);
+        double somePeso = peso1 + peso2;
+
+        double media = somaNotas / somePeso;
+
+        if (media > 10 ) {
+            System.out.println("O resultado da média das notas "+ n1 + " E "+ n2 + " É: "+ "10" );
+        } else {
+            System.out.println("O resultado da média das notas "+ n1 + " E "+ n2 + " É: "+ media);
+        }
     }
 }
